@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Основы HTML</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        
         <button>Нажми меня</button>
         <!-- Заголовок первого уровня -->
         <h1 class="head" id="head-1">Lorem ipsum dolor sit amet consectetur</h1>
-        <p style="background-color: thistle;">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Debitis laboriosam facere aperiam accusamus a quos nam dolor? Quas praesentium tenetur, soluta repellat recusandae autem eum, excepturi illum quo itaque odio.</p>
-        <h2 style="color: rgb(37, 55, 189)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet?</h2>
+        <p class="par-1">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Debitis laboriosam facere aperiam accusamus a quos nam dolor?</span> Quas praesentium tenetur, soluta repellat recusandae autem eum, excepturi illum quo itaque odio.</p>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet?</h2>
         <img src="images/image-1.jpg" width="300" alt="Картинка 1">
         <img src="images/image-2.jpg" width="300" alt="Картинка 2">
         <img src="https://images.unsplash.com/photo-1684588435351-95c851e41916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" width="300" alt="Картинка 3">
@@ -61,31 +63,30 @@
             <li>Крыша</li>
         </ol>
 
-
         <!-- новости -->
 
-        <div>
+        <div class="lorem">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi molestias eos tempora porro adipisci dicta dignissimos veritatis pariatur velit esse alias excepturi iste hic odio quia, numquam libero nam?</div>
 
         <div class="news_container"><!-- контейнер со всеми новостями -->
-            <div class="news_item"><!-- новость 1 -->
+            <div class="news_item news-item-1"><!-- новость 1 -->
                 <h2>ИИ представил дизайн дома для современного пещерного человека</h2>
                 <p>Дизайн этого подземного пещерного дома представляет собой уникальное сочетание истории и инноваций со всеми необходимыми современными удобствами. Естественные скальные образования являются потрясающим фоном для уютного интерьера, создавая ощущение гармонии с землей.</p>
                 <p>15:05</p>
             </div>
-            <div class="news_item"><!-- новость 2 -->
+            <div class="news_item news-item-2"><!-- новость 2 -->
                 <h2>Земли достиг «инопланетный» сигнал с Марса: его может попробовать расшифровать любой желающий</h2>
-                <p>Активисты из организации Институт SETI, которая занимается поиском внеземного разума, начали реализацию проекта под названием «Сигнал из космоса». В его рамках  космический аппарат Trace Gas, который находится на орбите Марса, отправил на Землю закодированный сигнал, имитирующий сообщение от инопланетян.</p>
+                <p class="par-1">Активисты из организации Институт SETI, которая занимается поиском внеземного разума, начали реализацию проекта под названием <span>«Сигнал из космоса»</span>. В его рамках  космический аппарат Trace Gas, который находится на орбите Марса, отправил на Землю закодированный сигнал, имитирующий сообщение от инопланетян.</p>
                 <p>17:05</p>
             </div>
-            <div class="news_item"><!-- новость 3 -->
+            <div class="news_item news-item-3"><!-- новость 3 -->
                 <h2>Шедевры датской живописи оказались написаны с помощью пива</h2>
                 <p>Начало XIX века было золотым веком для датского искусства и пивоварения. Связь между ними оказалась самой непосредственной: ученые показали, что мастера живописи грунтовали и лакировали свои полотна, используя остатки пивного производства.</p>
                 <p>16:35</p>
             </div>
         </div>
 
-        <form action="">
+        <form action="" class="reg-form">
             <label for="pet-select">Choose a pet:</label>
             <select name="pets" id="pet-select">
                 <option value="">--Please choose an option--</option>
@@ -111,6 +112,6 @@
 
             <input type="submit" value="Войти">
         </form>
-
+        <!-- index.html ? first_name=иван & last_name=Иванов & email=test@test.ru & password=123456 -->
     </body>
 </html>
