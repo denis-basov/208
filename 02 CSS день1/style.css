@@ -54,6 +54,10 @@ table {
     border: 3px solid red;
 }
 
+.news_item img {
+    width: 100%;
+}
+
 /* элемент(ы) с классом par-1  внутри элемента(ов) с классом news-item-2*/
 .news-item-2 .par-1 {
     color: brown;
@@ -139,14 +143,18 @@ ul .list {
     /* font-style: italic; */
     font-weight: 900;
     border: 3px solid transparent;
+    height: 100px;
+    background-color: rgb(211, 247, 192);
+    transition: all 0.3s;
 }
 
 /* стили при наведении мышью на заголовок */
 .head:hover {
     color: rgb(0, 0, 230);
-    background-color: aquamarine;
+    background-color: rgb(72, 187, 149);
     /* text-decoration: underline; */
     border: 3px solid gold;
+    height: 200px;
 }
 
 
@@ -222,6 +230,164 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.abs-container2 {}
+/* контейнер */
+.abs-container2 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+}
 
-.abs-container2 .item {}
+/* доч. элемент*/
+.abs-container2 .item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: transparent;
+    bottom: 30px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.abs-container2 .item img {
+    width: 100%;
+}
+
+/* .abs-container2 .item:hover {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: transparent;
+    top: 30px;
+    left: 10px;
+    transform: translate(50%, 50%);
+} */
+
+
+/* анимация */
+/*
+.animation {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    position: relative;
+
+    animation-name: my-animation;
+    animation-duration: 8s;
+}
+
+@keyframes my-animation {
+    0% {
+        background-color: brown;
+        left: 0;
+        bottom: 0;
+    }
+
+    25% {
+        background-color: green;
+        left: 200px;
+        bottom: 200px
+    }
+
+    50% {
+        background-color: blue;
+        left: 300px;
+        bottom: 300px;
+    }
+
+    75% {
+        background-color: orange;
+        left: 500px;
+        bottom: 500px;
+    }
+
+    100% {
+        background-color: brown;
+        left: 0;
+        bottom: 0;
+    }
+}
+*/
+/*
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: yellow;
+    overflow: hidden;
+
+    animation-name: my-animation;
+    animation-duration: 10s;
+}
+
+@keyframes my-animation {
+    0% {
+        background-color: black;
+        color: yellow;
+        transform: rotate(0);
+    }
+
+    25% {
+        background-color: blue;
+        color: darkkhaki;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        background-color: greenyellow;
+        color: darkmagenta;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        background-color: orchid;
+        color: darkblue;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        background-color: black;
+        color: yellow;
+        transform: rotate(360deg);
+    }
+}*/
+
+.animation2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(144, 135, 154);
+    position: relative;
+
+    animation-name: my-animation2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes my-animation2 {
+    0% {
+        background-color: rgb(41, 50, 47);
+        left: 0px;
+    }
+
+    25% {
+        background-color: rgb(181, 154, 154);
+        left: 200px;
+    }
+
+    50% {
+        background-color: white;
+        left: 300px;
+
+    }
+
+    75% {
+        background-color: rgb(197, 53, 53);
+        left: 500px;
+    }
+
+    100% {
+        background-color: rgb(133, 157, 149);
+        left: 0px;
+    }
+}
