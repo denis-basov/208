@@ -1,18 +1,32 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+html {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+body {
+    /* background-color: bisque; */
+}
+
 /* выбираем все параграфы и задаем им красный цвет текста */
 p {
     /* color: red;
     background-color: rgb(208, 202, 246);
     text-align: center; */
+    font-weight: 200;
 }
 
-h1 {
+/* h1 {
     box-sizing: border-box;
     color: azure;
     background-color: aquamarine;
     text-align: right;
     text-decoration: underline;
     text-transform: lowercase;
-}
+} */
 
 table {
     background-color: blanchedalmond;
@@ -22,11 +36,18 @@ table {
 .news_container {
     background-color: blueviolet;
     padding: 20px;
+    max-width: 1200px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
 }
 
 /* выбираем элемент(ы) по названию класса news_item */
 .news_item {
     background-color: aqua;
+    display: inline-block;
+    width: 350px;
 }
 
 .news-item-2 {
@@ -82,23 +103,8 @@ table {
     text-transform: lowercase;
     padding: 40px;
 } */
-.lorem {
-    border: 3px dotted grey;
-    border-radius: 10px;
-    background-color: beige;
-    color: blue;
-    text-align: center;
-    /* внешний отступ */
-    margin: 10px;
-    margin-left: 20px;
+/* 
 
-    /* внутренний отступ */
-    padding: 10px 20px;
-
-    /* ширина, высота*/
-    max-width: 600px;
-    /* height: 100px; */
-}
 
 /* ul {
     margin: 5px 15px 0 10px;
@@ -110,3 +116,112 @@ ul {
     margin-top: 5px;
     margin-bottom: 0;
 }
+
+/* ненумерованный список с классов list*/
+ul.list {
+    background-color: rgb(205, 145, 102);
+    list-style-type: none;
+}
+
+/* элемент с классом list внутри ненумерованного списка */
+ul .list {
+    /* background-color: rgb(144, 151, 234); */
+}
+
+/* стили в начальном состоянии */
+.head {
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    font-family: 'Merriweather', serif;
+    /* font-style: italic; */
+    font-weight: 900;
+    border: 3px solid transparent;
+}
+
+/* стили при наведении мышью на заголовок */
+.head:hover {
+    color: rgb(0, 0, 230);
+    background-color: aquamarine;
+    /* text-decoration: underline; */
+    border: 3px solid gold;
+}
+
+
+h2 {
+    font-weight: 500;
+}
+
+/* h2:hover {
+    color: aqua;
+    background-color: blue;
+    font-size: 20px;
+} */
+
+.lorem {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    border-bottom: 2px solid transparent;
+}
+
+.lorem:hover {
+    color: rgb(174, 233, 102);
+    background-color: azure;
+    text-align: right;
+}
+
+/* задаем стили для контейнера */
+.news_container {
+    /**/
+}
+
+/* задаем стили для всех новостей */
+.news_container .news_item {
+    /**/
+}
+
+/* задаем стили для конкретной новости */
+.news_container .news-item-1 {
+    /**/
+}
+
+/* задаем стили для заголовков новостей */
+.news_container .news_item .news_item--head-2 {
+    /**/
+}
+
+/* задаем стили для параграфов новостей */
+.news_container .news_item .news_item--par {
+    /**/
+}
+
+/* абсолютное позиционирование */
+.abs-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(250, 203, 186);
+}
+
+.abs-container .item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 167, 62);
+    /* отступить от левой границы 100п*/
+    /* left: 100px; */
+    /* отступить от верхней границы 150п*/
+    /* top: 150px; */
+    /* right: 100px;
+    bottom: 100px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.abs-container2 {}
+
+.abs-container2 .item {}

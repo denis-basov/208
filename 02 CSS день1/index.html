@@ -1,117 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Основы HTML</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <button>Нажми меня</button>
-        <!-- Заголовок первого уровня -->
-        <h1 class="head" id="head-1">Lorem ipsum dolor sit amet consectetur</h1>
-        <p class="par-1">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Debitis laboriosam facere aperiam accusamus a quos nam dolor?</span> Quas praesentium tenetur, soluta repellat recusandae autem eum, excepturi illum quo itaque odio.</p>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet?</h2>
-        <img src="images/image-1.jpg" width="300" alt="Картинка 1">
-        <img src="images/image-2.jpg" width="300" alt="Картинка 2">
-        <img src="https://images.unsplash.com/photo-1684588435351-95c851e41916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" width="300" alt="Картинка 3">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Основы HTML</title>
 
-        <a href="test.html">Ссылка на test.html</a>
-        <a href="https://developer.mozilla.org" target="_blank">MDN</a>
-        <a href="https://unsplash.com/" target="_blank">Unsplash</a>
-        <a href="https://vk.com/">VK</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
 
-        <table>
-            <!-- первый ряд -->
-            <tr>
-                <th>Имя</th>
-                <th>Фамилия</th>
-                <th>Возраст</th>
-                <th>Город</th>
-            </tr>
-            <!-- второй ряд -->
-            <tr>
-                <td>Иван</td>
-                <td>Иванов</td>
-                <td>11</td>
-                <td>Пермь</td>
-            </tr>
-            <!-- третий ряд -->
-            <tr>
-                <td>Анна</td>
-                <td>Иванова</td>
-                <td>14</td>
-                <td>Самара</td>
-            </tr>
-        </table>
-    
-        <hr>
-    
-        <!-- ненумерованный список -->
-        <ul type="square">
-            <li>Ананас</li>
-            <li>Банан</li>
-            <li>Апельсин</li>
-            <li>Кокос</li>
-        </ul>
-    
-        <!-- нумерованный список -->
-        <ol type="a">
-            <li>Колесо</li>
-            <li>Капот</li>
-            <li>Крыло</li>
-            <li>Крыша</li>
-        </ol>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
 
-        <!-- новости -->
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet" />
 
-        <div class="lorem">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi molestias eos tempora porro adipisci dicta dignissimos veritatis pariatur velit esse alias excepturi iste hic odio quia, numquam libero nam?</div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button>Нажми меня</button>
+    <!-- Заголовок первого уровня -->
+    <h1 class="head" id="head-1">Lorem ipsum dolor sit amet consectetur</h1>
+    <p class="par-1">
+      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Debitis laboriosam facere aperiam accusamus a quos nam dolor?</span> Quas praesentium tenetur, soluta
+      repellat recusandae autem eum, excepturi illum quo itaque odio.
+    </p>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet?</h2>
+    <img src="images/image-1.jpg" width="300" alt="Картинка 1" />
+    <img src="images/image-2.jpg" width="300" alt="Картинка 2" />
+    <img
+      src="https://images.unsplash.com/photo-1684588435351-95c851e41916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+      width="300"
+      alt="Картинка 3"
+    />
 
-        <div class="news_container"><!-- контейнер со всеми новостями -->
-            <div class="news_item news-item-1"><!-- новость 1 -->
-                <h2>ИИ представил дизайн дома для современного пещерного человека</h2>
-                <p>Дизайн этого подземного пещерного дома представляет собой уникальное сочетание истории и инноваций со всеми необходимыми современными удобствами. Естественные скальные образования являются потрясающим фоном для уютного интерьера, создавая ощущение гармонии с землей.</p>
-                <p>15:05</p>
-            </div>
-            <div class="news_item news-item-2"><!-- новость 2 -->
-                <h2>Земли достиг «инопланетный» сигнал с Марса: его может попробовать расшифровать любой желающий</h2>
-                <p class="par-1">Активисты из организации Институт SETI, которая занимается поиском внеземного разума, начали реализацию проекта под названием <span>«Сигнал из космоса»</span>. В его рамках  космический аппарат Trace Gas, который находится на орбите Марса, отправил на Землю закодированный сигнал, имитирующий сообщение от инопланетян.</p>
-                <p>17:05</p>
-            </div>
-            <div class="news_item news-item-3"><!-- новость 3 -->
-                <h2>Шедевры датской живописи оказались написаны с помощью пива</h2>
-                <p>Начало XIX века было золотым веком для датского искусства и пивоварения. Связь между ними оказалась самой непосредственной: ученые показали, что мастера живописи грунтовали и лакировали свои полотна, используя остатки пивного производства.</p>
-                <p>16:35</p>
-            </div>
-        </div>
+    <a href="test.html">Ссылка на test.html</a>
+    <a href="https://developer.mozilla.org" target="_blank">MDN</a>
+    <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+    <a href="https://vk.com/">VK</a>
 
-        <form action="" class="reg-form">
-            <label for="pet-select">Choose a pet:</label>
-            <select name="pets" id="pet-select">
-                <option value="">--Please choose an option--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
-            </select><br>
+    <table>
+      <!-- первый ряд -->
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+        <th>Город</th>
+      </tr>
+      <!-- второй ряд -->
+      <tr>
+        <td>Иван</td>
+        <td>Иванов</td>
+        <td>11</td>
+        <td>Пермь</td>
+      </tr>
+      <!-- третий ряд -->
+      <tr>
+        <td>Анна</td>
+        <td>Иванова</td>
+        <td>14</td>
+        <td>Самара</td>
+      </tr>
+    </table>
 
-            <label for="first_name">Имя:</label>
-            <input type="text" id="first_name" name="first_name" placeholder="Введите имя" required><br>
+    <hr />
 
-            <label for="last_name">Фамилия:</label>
-            <input type="text" id="last_name" name="last_name" placeholder="Введите фамилию"><br>
+    <!-- ненумерованный список -->
+    <ul class="list">
+      <li>Ананас</li>
+      <li class="list">Банан</li>
+      <li>Апельсин</li>
+      <li class="list">Кокос</li>
+    </ul>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Введите емейл"><br>
+    <!-- нумерованный список -->
+    <ol type="a">
+      <li>Колесо</li>
+      <li>Капот</li>
+      <li>Крыло</li>
+      <li>Крыша</li>
+    </ol>
 
-            <label for="password">Пароль</label>
-            <input type="password" id="password" name="password" size="50" placeholder="Введите пароль, минимум 6 символов"><br>
+    <!-- новости -->
 
-            <input type="submit" value="Войти">
-        </form>
-        <!-- index.html ? first_name=иван & last_name=Иванов & email=test@test.ru & password=123456 -->
-    </body>
+    <div class="lorem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi molestias eos tempora porro adipisci dicta dignissimos veritatis pariatur velit esse alias excepturi iste hic odio quia,
+      numquam libero nam?
+    </div>
+
+    <div class="news_container">
+      <!-- контейнер со всеми новостями -->
+      <div class="news_item news-item-1">
+        <!-- новость 1 -->
+        <h2 class="news_item--head-2">ИИ представил дизайн дома для современного пещерного человека</h2>
+        <p class="news_item--par news_item--par-1">
+          Дизайн этого подземного пещерного дома представляет собой уникальное сочетание истории и инноваций со всеми необходимыми современными удобствами. Естественные скальные образования являются
+          потрясающим фоном для уютного интерьера, создавая ощущение гармонии с землей.
+        </p>
+        <p class="news_item--par news_item--par-2">15:05</p>
+      </div>
+
+      <div class="news_item news-item-2">
+        <!-- новость 2 -->
+        <h2>Земли достиг «инопланетный» сигнал с Марса: его может попробовать расшифровать любой желающий</h2>
+        <p class="par-1">
+          Активисты из организации Институт SETI, которая занимается поиском внеземного разума, начали реализацию проекта под названием <span>«Сигнал из космоса»</span>. В его рамках космический
+          аппарат Trace Gas, который находится на орбите Марса, отправил на Землю закодированный сигнал, имитирующий сообщение от инопланетян.
+        </p>
+        <p>17:05</p>
+      </div>
+      <div class="news_item news-item-3">
+        <!-- новость 3 -->
+        <h2>Шедевры датской живописи оказались написаны с помощью пива</h2>
+        <p>
+          Начало XIX века было золотым веком для датского искусства и пивоварения. Связь между ними оказалась самой непосредственной: ученые показали, что мастера живописи грунтовали и лакировали свои
+          полотна, используя остатки пивного производства.
+        </p>
+        <p>16:35</p>
+      </div>
+    </div>
+
+    <div class="abs-container">
+      <div class="item"></div>
+    </div>
+
+    <div class="abs-container2">
+      <div class="item"></div>
+    </div>
+
+    <form action="" class="reg-form">
+      <label for="pet-select">Choose a pet:</label>
+      <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option></select
+      ><br />
+
+      <label for="first_name">Имя:</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Введите имя" required /><br />
+
+      <label for="last_name">Фамилия:</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Введите фамилию" /><br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Введите емейл" /><br />
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" size="50" placeholder="Введите пароль, минимум 6 символов" /><br />
+
+      <input type="submit" value="Войти" />
+    </form>
+    <!-- index.html ? first_name=иван & last_name=Иванов & email=test@test.ru & password=123456 -->
+  </body>
 </html>
