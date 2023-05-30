@@ -391,3 +391,81 @@ h2 {
         left: 0px;
     }
 }
+
+
+/* flexbox */
+
+/* flex-контейнер*/
+.flex_news_container {
+    background-color: rgb(146, 251, 251);
+    margin: 20px auto;
+    max-width: 1400px;
+    /* height: 2000px; */
+    padding: 20px;
+
+    /* flex-свойства */
+    display: flex;
+    /* отступы между элементами */
+    gap: 20px;
+    /* расположение элементов по осн оси */
+    justify-content: space-evenly;
+    /* расположение элементов по доп оси */
+    /* align-items: center; */
+    /* направление */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+}
+
+.flex_news_container .flex_news_item {
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 300px;
+}
+
+
+/* grid */
+.grid-container {
+    background-color: rgb(146, 251, 251);
+    margin: 20px auto;
+    max-width: 1400px;
+    /* height: 2000px; */
+    padding: 20px;
+
+    /* grid */
+    display: grid;
+    row-gap: 20px;
+    column-gap: 10px;
+    /* задаем кол-во и ширину колонок: px, %, auto, fr, repeat(5, auto)  */
+    grid-template-columns: repeat(3, 1fr);
+    /* задаем высоту рядов */
+    /* grid-template-rows: repeat(4, 150px); */
+
+    /* расположение элементов в ячейках*/
+    /* justify-items: end;
+    align-items: end; */
+
+    /* выравние самой сетки */
+    justify-content: center;
+}
+
+.grid-container .grid-item {
+    padding: 20px;
+    /* height: 50px;
+    width: 200px; */
+    background-color: coral;
+    text-align: center;
+}
+
+.grid-container .grid-item-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+}
+
+.grid-container .grid-item-6 {
+    grid-column: 2 / 4;
+}
+
+.grid-container .grid-item-7 {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+}
