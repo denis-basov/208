@@ -182,12 +182,12 @@ console.log(sum); ///Вопрос!!!
 //   console.log(`Элемент ${value} отсутствует в массиве.`);
 // }
 
-let nums = [1, 2, 3, 4, 5];
-let numbers = [4, 6, 4, 6, 8, 9, 3, 4, 5, 7, 44, 22];
-let random = [56, "hello", null, true, undefined, false, "", 0, [1, 2, 3], { a: 3, b: 4 }];
-let fruits = ["Киви", "Ананас", "Кокос", "Апельсин", "Банан", "Яблоко"];
-let pets = ["cat", "dog", "bat", "mouse", "pig", "goat", "sheep", "cow", "chicken"];
-let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
+// let nums = [1, 2, 3, 4, 5];
+// let numbers = [4, 6, 4, 6, 8, 9, 3, 4, 5, 7, 44, 22];
+// let random = [56, "hello", null, true, undefined, false, "", 0, [1, 2, 3], { a: 3, b: 4 }];
+// let fruits = ["Киви", "Ананас", "Кокос", "Апельсин", "Банан", "Яблоко"];
+// let pets = ["cat", "dog", "bat", "mouse", "pig", "goat", "sheep", "cow", "chicken"];
+// let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
 
 // join
 // let fruitsList = `<ul class="fruits"><li>${fruits.join("</li><li>")}</li></ul>`;
@@ -258,3 +258,280 @@ let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
 // let delItems = pets.splice(7);
 // let delItens1 = pets.splice(3, 0, ...delItems);
 // console.log(pets);
+
+// sort
+// const nums = [1, 2, 3, 4, 5];
+// let numbers = [4, 6, 4, 6, 8, 9, 3, 4, 5, 7, 44, 22];
+// let random = [56, "hello", null, true, undefined, false, "", 0, [1, 2, 3], { a: 3, b: 4 }];
+// let fruits = ["Киви", "Ананас", "Кокос", "Апельсин", "Банан", "Яблоко"];
+// let pets = ["cat", "dog", "bat", "mouse", "pig", "goat", "sheep", "cow", "chicken"];
+// let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
+// let ages = [5, 2, 6, 8, 32, 3, 2, 11, 21, 12, 13, 20, 42, 22, 11, 15];
+
+// fruits.sort();
+// console.log(fruits);
+
+// ages.sort();
+// console.log(ages);
+
+// array & const
+// nums.pop();
+// nums[1] = "hello";
+// nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+// console.log(nums);
+
+//let user = ["Иван", "Иванов", 21, "Пушкина", 4, 90];
+// let user = ["Имя" => "Иван", "Фамилия=Иванов", "возраст=21"];
+// console.log(user[0]); // '2023-12-05 12:01:22'
+
+// font-family: 'Roboto', sans-serif;
+// font-weight: 600;
+// font-size: 30px;
+// border-bottom: 2px solid transparent;
+// let h1 = document.querySelector("h1");
+// console.dir(h1);
+
+// объекты
+//let user = ["Иван", "Иванов", 21, "Пушкина", 4, 90];
+
+// let user = {
+//   firstName: "Иван",
+//   lastName: "Иванов",
+//   age: 21,
+//   address: {
+//     sity: "Пенза",
+//     street: "Пушкина",
+//     house: 4,
+//     floor: 90,
+//   },
+//   hobbies: ["Есть", "Спать", "Гулять", "Плавать"],
+//   isAdmin: true,
+// };
+
+// let user = {
+//   firstName: "Иван",
+//   lastName: "Иванов",
+//   age: 21,
+//   sity: "Пенза",
+//   street: "Пушкина",
+//   house: 4,
+//   floor: 90,
+//   hobbies: "Плавать",
+// };
+
+//console.log(user);
+
+// const cat = {
+//   name: "Ллойд",
+//   color: "Черный",
+//   age: 12,
+//   city: "Москва",
+//   owner: "Василий",
+// };
+//console.log(cat);
+
+// const palette = {
+//   red: "red_value",
+//   yellow: "yellow_value",
+//   blue: "blue_value",
+// };
+//console.log(palette);
+
+// let notebook = {
+//   vendor: "Acer",
+//   model: "Nitro 5",
+//   configuration: {
+//     processor: "Intel I5",
+//     ram: 16,
+//     ssd: [256, 1024, 2048],
+//   },
+//   screenSize: 15,
+//   illumination: true,
+// };
+// console.log(notebook);
+// console.log(notebook.model);
+// console.log(notebook.configuration.processor);
+// console.log(notebook.configuration.ssd.join(", "));
+
+// let user = {
+//   firstName: "Иван",
+//   lastName: "Иванов",
+//   age: 21,
+//   sity: "Пенза",
+//   street: "Пушкина",
+//   house: 4,
+//   floor: 90,
+//   hobbies: "Плавать",
+// };
+
+//console.log(user);
+// console.log(user.age);
+// console.log(user.hobbies);
+//let userStr = `<h3>Имя: ${user.firstName}. Фамилия: ${user.lastName}, Возраст: ${user.age}.</h3>`;
+//console.log(userStr);
+
+// let some = {
+//   name: "some",
+// };
+// console.log(some);
+
+// some = {
+//   defined: some,
+// };
+// console.log(some);
+
+// const cat = {
+//   name: "Ллойд",
+//   color: "Черный",
+//   age: 12,
+//   city: "Москва",
+//   owner: "Василий",
+// };
+
+// let cat = {
+//   name: "Басик",
+//   age: "2",
+//   sex: "м",
+//   color: "серый",
+//   owner: "Мила",
+// };
+// console.log(cat);
+// let catStr = `Кличка - ${cat.name}, возраст - ${cat.age}, окрас - ${cat.color}.`;
+// console.log(catStr);
+
+// let test = {
+//   string: "test_string",
+//   number: 123,
+//   boolean: true,
+//   array: [1, "1", true],
+// };
+// let test_str = `<p> \n Строковый тип: ${test.string}; \n Число: ${test.number}; \n Массив: ${test.array}; \n</p>`;
+// console.log(test_str);
+
+// let pets = {
+//   name: "Барсик",
+//   age: 3,
+//   race: "Британский вислоухий",
+//   passport: true,
+//   male: "Мальчик",
+// };
+
+// let petName = `<h3> Имя:${pets.name}. Возраст: ${pets.age}. Порода: ${pets.race}. Наличие паспорта: ${pets.passport ? "да" : "нет"}. Пол: ${pets.male} </h3>`;
+// console.log(petName);
+
+/*
+let notebook = {
+  vendor: "Acer",
+  model: "Nitro 5",
+  configuration: {
+    processor: "Intel I5",
+    ram: 16,
+    ssd: 256,
+  },
+  screenSize: 15,
+  illumination: true,
+};
+console.log(`<h1>${notebook.vendor} ${notebook.model}</h1>
+<h3>Configuration</h3>
+<ul>
+  <li>${notebook.configuration.processor}</li>
+  <li>${notebook.configuration.ram}</li>
+  <li>${notebook.configuration.ssd}</li>
+</ul>`);
+
+let htmlStr = `<h1>${notebook.vendor} ${notebook.model}</h1>
+<h3>Configuration</h3>
+<ul>
+<li>${notebook.configuration.processor}</li>
+<li>${notebook.configuration.ram}</li>
+<li>${notebook.configuration.ssd}</li>
+</ul>`;
+let box1 = document.querySelector("#box-1"); // получаем элемент со страницы
+console.dir(box1);
+box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера */
+
+// let user = {
+//   firstName: "Иван",
+//   lastName: "Иванов",
+//   age: 21,
+//   sity: "Пенза",
+//   street: "Пушкина",
+//   house: 4,
+//   floor: 90,
+//   hobbies: "Плавать",
+//   "is admin": true,
+// };
+
+// console.log(user["is admin"]);
+// console.log(user["age"]);
+
+// let userProp = "firstName";
+// console.log(user[userProp]);
+//console.log(user.age);
+
+// user.firstName = "Игорь";
+// //user.firstame = "Игорь";
+// console.log(user);
+// console.log(`Имя: ${user.firstName}, фамилия: ${user.lastName}`);
+
+// user.pet = "dog";
+// console.log(user);
+
+/* 
+let calculate = {
+  sum: 0,
+  multi: 1,
+  arr: [],
+};
+
+let arr = [1, 2, 3, 4, 5];
+
+for (let num of arr) {
+  calculate.sum += num;
+  calculate.multi *= num;
+  calculate.arr.push(num);
+}
+
+console.log(`sum = ${calculate.sum}, multi = ${calculate.multi}, arr: ${calculate.arr.join(", ")}`);*/
+
+let user = {
+  firstName: "Иван",
+  lastName: "Иванов",
+  age: 21,
+  address: {
+    sity: "Пенза",
+    street: "Пушкина",
+    house: 4,
+    floor: 90,
+  },
+  hobbies: ["Есть", "Спать", "Гулять", "Плавать", "Играть на флейте"],
+  isAdmin: true,
+  avatar: "user.jpg",
+};
+
+// вывести ВСЕ данные в документ
+let htmlStr = `
+  <div class="user">
+    <img src="${user.avatar}" alt="${user.firstName} ${user.lastName}">
+    <h2>Имя: ${user.firstName}. Фамилия: ${user.lastName}</h2>
+    <p>Возраст: ${user.age}</p>
+    <h3>Адрес:</h3>
+    <div class="address">
+      <span>Город: ${user.address.sity}</span>
+      <span>Улица: ${user.address.street}</span>
+      <span>Дом: ${user.address.house}</span>
+      <span>Этаж: ${user.address.floor}</span>
+    </div>
+    <h3>Хобби:</h3>
+    <ol class="hobby-list">
+      <li>${user.hobbies.join("</li><li>")}</li>
+    </ol>
+    <p>Админ: ${user.isAdmin ? "да" : "нет"}</p>
+  </div>
+`;
+
+let box1 = document.querySelector("#box-1"); // получаем элемент со страницы
+box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера
+box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера
+box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера
