@@ -495,6 +495,7 @@ for (let num of arr) {
 
 console.log(`sum = ${calculate.sum}, multi = ${calculate.multi}, arr: ${calculate.arr.join(", ")}`);*/
 
+/*
 let user = {
   firstName: "Иван",
   lastName: "Иванов",
@@ -535,3 +536,93 @@ let box1 = document.querySelector("#box-1"); // получаем элемент 
 box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера
 box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера
 box1.insertAdjacentHTML("beforeend", htmlStr); // размещаем текст относительно контейнера
+*/
+/*
+const cat = {
+  name: "Ллойд",
+  color: "Черный",
+  age: 12,
+  city: "Москва",
+  owner: "Василий",
+};
+const cat1 = {
+  name: "Барсик",
+  color: "Серый",
+  age: 6,
+  city: "Москва",
+  owner: "Анна",
+};
+const cat2 = {
+  name: "Мурка",
+  color: "Белый",
+  age: 2,
+  city: "Самара",
+  owner: "Инна",
+};
+*/
+
+let cats = [
+  {
+    name: "Ллойд",
+    color: "Черный",
+    age: 12,
+    city: "Москва",
+    owner: "Василий",
+  },
+  {
+    name: "Барсик",
+    color: "Серый",
+    age: 6,
+    city: "Москва",
+    owner: "Анна",
+  },
+  {
+    name: "Мурка",
+    color: "Белый",
+    age: 2,
+    city: "Самара",
+    owner: "Инна",
+  },
+];
+
+//let catsAges = cats[0].age + cats[1].age + cats[2].age;
+// console.log(cats);
+// console.log(catsAges);
+// console.log(cats[2].name);
+// console.log(cats[1].age);
+// сформируйте строку:
+// '<h2>Кличка: Ллойд, цвет шерсти: Белый, Город: Москва, возраст: 12</h2>'
+// let catsStr = `<h2>Кличка: ${cats[0].name}, цвет шерсти: ${cats[0].color}, город: ${cats[0].city}, возраст: ${cats[0].age}.</h2>`;
+// console.log(catsStr);
+
+// let cat_str = `<h2>
+//     Кличка: ${cats[0].name}, Цвет шерсти: ${cats[2].color}, Город: ${cats[0].city}, Возраст: ${cats[0].age}.
+//   </h2>`;
+// console.log(cat_str);
+
+let catsHtmlStr = `
+    <div class="cat">
+      <h2>Кличка: ${cats[0].name}</h2>
+      <p>Цвет шерсти: ${cats[0].color}</p>
+      <p>Возраст: ${cats[0].age}</p>
+      <p>Город: ${cats[0].city}</p>
+      <p>Владелец: ${cats[0].owner}</p>
+    </div>
+    <div class="cat">
+      <h2>Кличка: ${cats[1].name}</h2>
+      <p>Цвет шерсти: ${cats[1].color}</p>
+      <p>Возраст: ${cats[1].age}</p>
+      <p>Город: ${cats[1].city}</p>
+      <p>Владелец: ${cats[1].owner}</p>
+    </div>
+      <div class="cat">
+      <h2>Кличка: ${cats[2].name}</h2>
+      <p>Цвет шерсти: ${cats[2].color}</p>
+      <p>Возраст: ${cats[2].age}</p>
+      <p>Город: ${cats[2].city}</p>
+      <p>Владелец: ${cats[2].owner}</p>
+    </div>
+`;
+
+let box = document.getElementById("box-1");
+box.insertAdjacentHTML("beforeend", catsHtmlStr);
