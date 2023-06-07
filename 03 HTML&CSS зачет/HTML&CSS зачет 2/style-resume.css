@@ -1,0 +1,81 @@
+nav a:nth-of-type(2) {
+    background-color: hsla(267, 100%, 13%, .4);
+}
+
+section {
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.card_direct {
+    font-size: 1.2rem;
+}
+
+.date {
+    display: inline-block;
+    width: 10.7rem;
+    margin-bottom: 1.7rem;
+    color: hsl(277, 34%, 34%);
+}
+
+.spec {
+    width: 10.3rem;
+    text-align: right;
+    color: hsl(0, 0%, 34%);
+}
+
+.card_line {
+    padding: 0 1rem;
+}
+
+.card_line span{
+    display: block;
+    width: .2rem;
+    height: 21.2rem;
+    background: hsl(290, 90%, 41%);
+    box-shadow: 0 4px 4px hsl(290, 90%, 41%);
+}
+
+.card_content ul {
+    width: 31.4rem;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+.card_content h4 {
+    margin: 1rem 0;
+}
+
+.card_content .list {
+margin-left: 2rem;
+}
+
+.card_content .sublist {
+    margin-left: 4rem;
+}
+
+@media (max-width: 56rem) {
+
+    .card {
+        margin-bottom: 1.7rem;
+    }
+
+    .card_content ul {
+        width: 15.5rem;
+        line-height: 1.2rem;
+        font-size: .9rem;
+    }
+
+    section .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .card_line {
+        padding-left: 0;
+    }
+}

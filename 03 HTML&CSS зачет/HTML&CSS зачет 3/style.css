@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Alata', sans-serif;
+
+    /* база 16px = 100% */
+    /* база 10px = 62.5% */
+    font-size: 62.5%;
+    /* 1rem = 10px  */
+    /* 2.4rem = 24px */
+    /* 12rem = 1200px*/
+    color: #E8E8E8;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(34, 26, 55);
+    background-image: url('Background_Image.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+/* header */
+header {
+    max-width: 142rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+}
+
+header .logo {
+    font-size: 2.7rem;
+}
+
+header nav {
+    display: flex;
+    padding: 1rem 3.6rem;
+    gap: 3.2rem;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #E8E8E8;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+header nav a:hover {
+    background: #402166;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+}
+
+/* main */
+main {
+    max-width: 142rem;
+    padding: 2rem 10rem;
+    display: grid;
+    grid-template-columns: 48.5rem;
+    justify-content: end;
+    font-size: 1.6rem;
+}
+
+main .title {
+    margin: 3rem 0;
+}
+
+main .title .top {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #5D3974;
+}
+
+main .title .bottom {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #575757;
+}
+
+main .title h1,
+main .title h2 {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 5.2rem;
+}
+
+main .info {
+    margin-bottom: 3rem;
+}
+
+.flex_rcontainer {
+	display: flex;
+	margin-left: 8rem; 
+
+
+	padding-left: 2rem;
+	flex-direction: column;
+	box-sizing: border-box;
+	}
+
+.flex_rcontainer h1{
+    font-weight: 700;
+    font-size: 1.4rem;
+	line-height: 2.2rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.flex_rcontainer h2{
+    font-weight: 700;
+    font-size: 1.2rem;
+	color: #5D3974;
+	text-align: right;
+	margin-right: 40rem;
+	margin-left: -100rem;
+	margin-top: -4rem;
+}
+
+.flex_rcontainer h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+	color: #575757;
+	text-align: right;
+	margin-right: 40rem;
+	margin-left: -50rem; 
+	margin-top: 1rem;
+}
+
+.flex_ritem{
+	border-left: #402166 solid; 
+	margin-bottom: 3rem;
+	padding-left: 2rem;
+	height: 22rem;
+	}
+
+.rlist{
+	margin-left: 1rem;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	list-style: disc;
+	width: 31.4rem;
+}
+
+.rlist1{
+	margin-left: 3rem;
+}
+
+.gallery {
+	margin-top: 0 rem;
+    display: grid;
+    grid-template-columns: repeat(2, 24.3rem);
+    grid-template-rows: repeat(3,24.3rem);
+  }
+
+.gallery__img
+{
+width: 22.25rem;
+height: 22.35rem;
+border: 25rem;
+border-radius: 1rem;
+}
+
+.certificate {
+	margin-top: 0 rem;
+    margin-bottom: 31.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 22.35rem);
+    grid-template-rows: repeat(3,22.35rem);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+
+.certificate__img
+{
+    width: 22.35rem;
+    height: 21rem;
+}
+

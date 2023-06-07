@@ -1,0 +1,40 @@
+nav a:nth-of-type(3) {
+    background-color: hsla(267, 100%, 13%, .4);
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 22.3rem);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+section div:nth-of-type(1) {background: url("images/img-1.png");}
+section div:nth-of-type(2) {background: url("images/img-2.png");}
+section div:nth-of-type(3) {background: url("images/img-3.png");}
+section div:nth-of-type(4) {background: url("images/img-4.png");}
+section div:nth-of-type(5) {background: url("images/img-5.png");}
+section div:nth-of-type(6) {background: url("images/img-6.png");}
+
+section.container div {
+    width: 22.3rem;
+    height: 22.3rem;
+    border-radius: 1rem;
+    background-size: 100%;
+    background-position: center;
+}
+
+@media (max-width: 56rem) {
+
+    section.container {
+        grid-template-columns: repeat(2, auto);
+        margin-left: 1rem;
+    }
+
+    section.container div {
+        width: 14.5rem;
+        height: 21.3rem;
+        border-radius: 1rem;
+        background-size: auto 100%;
+    }
+}
