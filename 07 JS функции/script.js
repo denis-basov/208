@@ -69,7 +69,132 @@
 //   let arr1 = [el1, el2, el3];
 //   let arr2 = [el3, el2, el1];
 
-//   return { first: arr1, second: arr2 };
+//   let resObj = { first: arr1, second: arr2 };
+//   return resObj;
 // }
 
-// console.log(makeArr(1, 2, 3));
+// let sumArr = makeArr(1, 2, 3);
+
+// console.log(sumArr);
+// console.log(sumArr.second);
+
+let fruits = ["Киви", "Ананас", "Кокос", "Апельсин", "Банан", "Яблоко"];
+let pets = ["cat", "dog", "bat", "mouse", "pig", "goat", "sheep", "cow", "chicken"];
+let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
+let arr = [1, 2, 3, 4, 5];
+
+// function enumeration(someObject) {
+//   for (let value of someObject) {
+//     console.log(value);
+//   }
+// }
+
+// enumeration(fruits);
+// enumeration(pets);
+// enumeration(animals);
+// enumeration(arr);
+
+// function write(arr) {
+//   for (let elem of arr) {
+//     console.log(elem);
+//   }
+// }
+
+// write(fruits);
+
+// function enumeration(someObject) {
+//   let resStr = "";
+//   for (let value of someObject) {
+//     resStr += value + " ";
+//   }
+//   return resStr;
+// }
+
+// let result = enumeration(pets);
+// console.log(result);
+
+// let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
+// сформировать массив строк по типу: ["<p>ant</p>", "<p>bison</p>", "<p>camel</p>"]
+
+/*
+// возвращает массив параграфов
+function makePars(arr, className) {
+  let newArr = [];
+  let count = 1;
+  for (let element of arr) {
+    newArr.push(`<p class="${className} ${className}-${count}">${element}</p>`);
+    count++;
+  }
+  return newArr;
+}
+
+let arrPars = makePars(animals, "animals");
+
+// возвращает строку
+function makeStr(arr) {
+  let resStr = "";
+  for (let value of arr) {
+    resStr += value;
+  }
+  return resStr;
+}
+let strHtml = makeStr(arrPars);
+
+// вывести строку в документ
+function makeHtml(str, containerId) {
+  let container = document.getElementById(containerId);
+  container.insertAdjacentHTML("beforeend", str);
+}
+
+let containerId = "box-1";
+makeHtml(strHtml, containerId);
+
+// let fruits = ["Киви", "Ананас", "Кокос", "Апельсин", "Банан", "Яблоко"];
+let containerId2 = "box-2";
+let fruitsPars = makePars(fruits, "fruits");
+let fruitsStr = makeStr(fruitsPars);
+makeHtml(fruitsStr, containerId2);
+*/
+
+/*
+function addTeg(elem, className = "") {
+  let classElem = ` class="${className}"`;
+  return `<p${classElem}>${elem}</p>`;
+}
+
+function generateTeg(array, className) {
+  let newArr = [];
+  let count = 1;
+  for (let elem of array) {
+    newArr.push(addTeg(elem, `${className}${count++}`));
+  }
+  return newArr;
+}
+
+function getStrFromArr(arr) {
+  let str = "";
+  for (let elem of arr) {
+    str += elem;
+  }
+  return str;
+}
+
+function writeToHtml(str, id) {
+  let box = document.getElementById(id);
+  box.insertAdjacentHTML("beforeend", str);
+}
+
+function write(array, id, addClass) {
+  writeToHtml(getStrFromArr(generateTeg(animals, addClass)), id);
+}
+
+write(fruits, "box-1", "fruit");*/
+
+// let fruits = ["Киви", "Ананас", "Кокос", "Апельсин", "Банан", "Яблоко"];
+
+// let result = fruits.map(el => `<p>${el}</p>`).join("");
+// console.log(result);
+// fruits.map(function (element) {
+//   console.log(element);
+// });
+// fruits.map((element) => console.log(element));
