@@ -256,7 +256,7 @@ json_encode($user)
 let cats = [
   {
     name: "Ллойд",
-    color: "Черный",
+    color: "Чёрный",
     age: 12,
     owner: {
       name: "Василий",
@@ -309,3 +309,114 @@ let cats = [
 //   return animal.length > 3;
 // });
 // console.log(filteredAnimals);
+
+// let newCats = cats.filter(function (cat) {
+//   return cat.owner.city === "Москва";
+// });
+
+// console.log(newCats);
+
+// every
+// let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
+// let result = animals.every(function (animal) {
+//   return animal.length < 8;
+// });
+// console.log(result);
+
+// let result = cats.every(function (cat) {
+//   return cat.owner.city === "Москва";
+// });
+// console.log(result);
+
+// let result = cats.every(function (cat) {
+//   return cat.owner.phones.length >= 3;
+// });
+// console.log(result);
+
+// some
+// let some = (arr, func) => {
+//   for (let el of arr) {
+//     if (func(el)) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };
+// console.log(some(cats, (cat) => cat.owner.city === "Самара"));
+
+// есть ли черный или белый кот в массиве
+// let res = cats.some(function (cat) {
+//   return cat.color === "Черный" || cat.color === "Чёрный" || cat.color === "Белый";
+// });
+// console.log(res);
+
+// reduce
+//let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let sum = 0;
+// for (let number of numbers) {
+//   sum += number;
+// }
+// console.log(sum);
+
+// let sum = numbers.reduce(function (accumulator, number) {
+//   return accumulator + number;
+// });
+//console.log(numbers.reduce((sum, number) => sum + number));
+// 1. accumulator = 1, number = 2, return = 3
+// 2. accumulator = 3, number = 3, return = 6
+// 3. accumulator = 6, number = 4, return = 10
+// 4. accumulator = 10, number = 5, return = 15
+//console.log(sum);
+
+// let animals = ["ant", "bison", "camel", "duck", "elephant", "cat", "dog"];
+// console.log(animals.reduce((str, animal) => str + " " + animal));
+// console.log(animals.reduce((str, animal) => str + ", " + animal));
+// const strAnimals = animals.reduce((result, animal) => result + animal + " ", "");
+// console.log(strAnimals);
+
+// let strAnimls = animals.reduce(function (str, animal) {
+//   return `${str} ${animal}`;
+// }, "");
+// console.log(strAnimls);
+
+// let sum = numbers.reduce(function (accumulator, number) {
+//   return accumulator + number;
+// }, 100);
+// console.log(sum);
+
+/*
+let nums = [7, 2, 8, 5, 15, 21, 33, 19];
+// получить максимальное значение
+let maximum = nums.reduce(function (max, currentValue) {
+  if (max >= currentValue) {
+    return max;
+  } else {
+    return currentValue;
+  }
+}, 0);
+// 1. max = 0, currentValue = 7, return = 7
+// 2. max = 7, currentValue = 2, return = 7
+// 3. max = 7, currentValue = 8, return = 8
+console.log(maximum);*/
+
+// sort
+//let nums = [7, 2, 8, 5, 15, 21, 33, 19];
+// nums.sort(function (a, b) {
+//   return a - b;
+// });
+// // 1. a = 7, b = 2; 7-2=5
+// // 2. a = 7, b = 8; 7-8=-1
+
+// console.log(nums);
+
+// nums.sort(function (a, b) {
+//   return b - a;
+// });
+// console.log(nums);
+
+// сортируем котов по возрасту
+// cats.sort(function (cat1, cat2) {
+//   return cat1.age - cat2.age;
+// });
+// console.log(cats);

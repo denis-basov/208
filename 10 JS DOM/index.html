@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: aquamarine;
+        padding: 20px;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+      }
+      .box .user {
+        width: 300px;
+        padding: 10px;
+        background-color: bisque;
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box .user img {
+        width: 100%;
+      }
+      .head {
+        color: red;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <button>Нажми меня</button>
+    <!-- Заголовок первого уровня -->
+    <h1 id="head-1">Lorem ipsum dolor sit amet consectetur</h1>
+    <p style="background-color: thistle">
+      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />Debitis laboriosam facere aperiam accusamus a quos nam dolor? Quas praesentium tenetur, soluta
+      repellat recusandae autem eum, excepturi illum quo itaque odio.
+    </p>
+    <h2 class="head" style="color: rgb(37, 55, 189)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet?</h2>
+    <img src="images/image-1.jpg" width="300" alt="Картинка 1" />
+    <img src="images/image-2.jpg" width="300" alt="Картинка 2" />
+    <img
+      src="https://images.unsplash.com/photo-1684588435351-95c851e41916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+      width="300"
+      alt="Картинка 3"
+    />
+
+    <div class="news_container">
+      <!-- контейнер со всеми новостями -->
+      <div class="news_item">
+        <!-- новость 1 -->
+        <h2>ИИ представил дизайн дома для современного пещерного человека</h2>
+        <p>
+          Дизайн этого подземного пещерного дома представляет собой уникальное сочетание истории и инноваций со всеми необходимыми современными удобствами. Естественные скальные образования являются
+          потрясающим фоном для уютного интерьера, создавая ощущение гармонии с землей.
+        </p>
+        <p>15:05</p>
+      </div>
+      <div class="news_item">
+        <!-- новость 2 -->
+        <h2>Земли достиг «инопланетный» сигнал с Марса: его может попробовать расшифровать любой желающий</h2>
+        <p>
+          Активисты из организации Институт SETI, которая занимается поиском внеземного разума, начали реализацию проекта под названием «Сигнал из космоса». В его рамках космический аппарат Trace Gas,
+          который находится на орбите Марса, отправил на Землю закодированный сигнал, имитирующий сообщение от инопланетян.
+        </p>
+        <p>17:05</p>
+      </div>
+      <div class="news_item">
+        <!-- новость 3 -->
+        <h2>Шедевры датской живописи оказались написаны с помощью пива</h2>
+        <p>
+          Начало XIX века было золотым веком для датского искусства и пивоварения. Связь между ними оказалась самой непосредственной: ученые показали, что мастера живописи грунтовали и лакировали свои
+          полотна, используя остатки пивного производства.
+        </p>
+        <p>16:35</p>
+      </div>
+    </div>
+
+    <form action="">
+      <label for="first_name">Имя:</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Введите имя" required /><br />
+
+      <label for="last_name">Фамилия:</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Введите фамилию" /><br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Введите емейл" /><br />
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" size="50" placeholder="Введите пароль, минимум 6 символов" /><br />
+
+      <input type="submit" value="Войти" />
+    </form>
+  </body>
+</html>
