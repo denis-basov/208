@@ -32,11 +32,34 @@
       .error {
         color: red;
       }
+
+      .head-style {
+        max-width: 1000px;
+        background-color: bisque;
+        color: brown;
+        padding: 15px 30px;
+        margin: 20px;
+        border: 4px solid darkgoldenrod;
+        border-radius: 10px;
+      }
+      .hidden {
+        display: none;
+      }
+
+      .container {
+        display: flex;
+        gap: 15px;
+      }
     </style>
     <script defer src="script.js"></script>
   </head>
   <body>
     <button id="button-1">Нажми меня</button>
+    <form action="" id="enter">
+      <input type="text" placeholder="Введите логин" /><br />
+      <input type="password" placeholder="Пароль, от 6 символов" /><br />
+      <input type="submit" value="Войти" />
+    </form>
     <!-- Заголовок первого уровня -->
     <h1 id="head-1">Lorem ipsum dolor sit amet consectetur</h1>
     <p style="background-color: thistle">
@@ -44,9 +67,10 @@
       repellat recusandae autem eum, excepturi illum quo itaque odio.
     </p>
     <h2 class="head" style="color: rgb(37, 55, 189)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, amet?</h2>
-    <img src="images/image-1.jpg" width="300" alt="Картинка 1" />
-    <img src="images/image-2.jpg" width="300" alt="Картинка 2" />
+    <img class="img img-1" src="images/image-1.jpg" width="300" alt="Картинка 1" />
+    <img class="img img-2" src="images/image-2.jpg" width="300" alt="Картинка 2" />
     <img
+      class="img img-3"
       src="https://images.unsplash.com/photo-1684588435351-95c851e41916?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
       width="300"
       alt="Картинка 3"
@@ -62,7 +86,7 @@
 
     <div class="news_container">
       <!-- контейнер со всеми новостями -->
-      <div class="news_item">
+      <div class="news_item news_item-1">
         <!-- новость 1 -->
         <h2>ИИ представил дизайн дома для современного пещерного человека</h2>
         <p>
@@ -71,7 +95,7 @@
         </p>
         <p>15:05</p>
       </div>
-      <div class="news_item">
+      <div class="news_item news_item-2">
         <!-- новость 2 -->
         <h2>Земли достиг «инопланетный» сигнал с Марса: его может попробовать расшифровать любой желающий</h2>
         <p>
@@ -80,7 +104,7 @@
         </p>
         <p>17:05</p>
       </div>
-      <div class="news_item">
+      <div class="news_item news_item-3">
         <!-- новость 3 -->
         <h2>Шедевры датской живописи оказались написаны с помощью пива</h2>
         <p>
@@ -91,7 +115,7 @@
       </div>
     </div>
 
-    <form action="" id="form-1">
+    <form action="form.php" id="form-1">
       <label for="first_name">Имя:</label>
       <input type="text" id="first_name" name="first_name" placeholder="Введите имя" />
       <span class="error" id="first_name_error"></span><br />
