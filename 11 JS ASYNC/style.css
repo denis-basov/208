@@ -1,0 +1,21 @@
+.countries {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.countries .country {
+    max-width: 250px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.countries .country .country-img {
+    display: flex;
+    gap: 5px;
+}
+
+.countries .country .country-img img {
+    width: 50%;
+}
