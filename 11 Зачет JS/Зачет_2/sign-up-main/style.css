@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-mobile.png);
+}
+
+section {
+    padding: 20px 30px;
+}
+
+.sec-1 {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0 40px 30px;
+    font-weight: 700;
+}
+
+.sec-1 p {
+    line-height: 2em;
+}
+
+
+button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 10px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.8);
+    background-color: hsl(248, 32%, 49%);
+}
+
+.free-trial {
+    margin-bottom: 25px;
+    box-shadow: 0 10px 3px rgb(0, 0, 0, 0.3);
+}
+
+button span {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+button[type=submit] {
+    padding: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: hsl(154, 59%, 51%);
+}
+
+.sec-2 div {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 10px 3px rgb(0, 0, 0, 0.3);
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: azure;
+}
+
+input.error {
+    margin-bottom: 5px;
+    border-color: hsl(0, 100%, 74%);
+    background: url(./images/icon-error.svg) no-repeat scroll 95%;
+}
+
+input.error.stop {
+    background-image: none;
+}
+
+form span {
+    /* display: inline-block; */
+
+    /* border: 1px solid green; */
+
+
+    margin-bottom: 15px;
+    font-size: .7em;
+    float: right;
+    color: red;
+}
+
+/* input:focus {*/
+/*    background-image: none;*/
+/*}*/
+
+.sec-2 div p {
+    text-align: center;
+    font-size: small;
+}
+
+.sec-2 div p span {
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+}
+
+
+@media screen and (min-width: 900px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    /*
+        body {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 100vh;
+            padding: 200px 50px;
+        } */
+    main {
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 2% 10%;
+        gap: 50px;
+    }
+
+    section {
+        padding: 0;
+        margin: auto;
+    }
+
+    .sec-1 {
+        text-align: left;
+        width: 50%;
+    }
+
+    .sec-2 {
+        width: 50%;
+        padding: 0;
+
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-inline: 0;
+        line-height: 1.2em;
+    }
+}
