@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+}
+
+header{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+footer{
+    background-color: beige;
+    padding: 20px;
+}
+
+main{
+    background-color: #e8fedb;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+nav a{
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #fdb2aa;
+}
