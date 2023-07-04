@@ -1,0 +1,38 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 15px;
+    background: #d4eefe;
+}
+.box{
+    background: lightgray;
+    padding: 15px;
+}
+
+.orders{
+    max-width: 1600px;
+    margin: auto;
+    padding: 15px;
+    background: #d4eefe;
+}
+
+.order{
+    margin-bottom: 20px;
+    background-color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.order div{
+    background-color: #d8e3fa;
+    padding: 0 5px;
+}
+
+.order div h2{
+    font-size: 20px;
+}
