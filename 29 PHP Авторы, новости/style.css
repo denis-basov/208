@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-family: 'Cormorant Garamond', serif;
+    color: #535353;
+}
+
+body{
+    margin: 0;
+}
+
+.news{
+    max-width: 1200px;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 30px;
+}
+
+.news_item{
+    margin: 100px 0;
+    background-color: #cde3eb;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.news_item h2{
+    font-size: 30px;
+}
+
+.news_item span{
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.news_item .link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.news_item .news_link{
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: salmon;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #d5ffc9;
+    font-weight: 600;
+}
+
+.news_preview{
+    display: flex;
+    padding: 30px 0;
+    gap: 30px;
+}
+
+.news_preview img{
+    width: 350px;
+    border-radius: 7px;
+}
+
+.news_preview p{
+    font-size: 25px;
+    font-weight: 500;
+}
