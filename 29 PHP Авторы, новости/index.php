@@ -10,5 +10,6 @@
 <body>
 	<h1>Главная страница</h1>
 	<a href="news/news.php">Новости</a>
+	<a href="news/news_filter.php">Новости с фильтром</a>
 </body>
 </html>

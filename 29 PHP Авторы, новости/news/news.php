@@ -8,7 +8,7 @@ $query = "SELECT news.id AS news_id, category, title, short_text, news_image, ad
 					authors.id AS author_id, first_name, last_name
 					FROM news, authors
 					WHERE author_id = authors.id
-        	ORDER BY add_date DESC;";
+        	        ORDER BY add_date DESC;";
 $result = $pdo->query($query);
 //DBConnect::d($result->fetchAll());
 
@@ -27,6 +27,7 @@ $result = $pdo->query($query);
 <body>
 	<div class="news">
 		<h1>Новости</h1>
+        <a href="/">На главную</a>
 		<?php while($news_item = $result->fetch()):?>
 			<div class="news_item">
                 <a class="link" href="news_detail.php?news_id=<?=$news_item['news_id']?>">
@@ -51,6 +52,7 @@ $result = $pdo->query($query);
 
 			</div>
 		<?php endwhile;?>
+        <a href="/">На главную</a>
 	</div>
 </body>
 </html>
