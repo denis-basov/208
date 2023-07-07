@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    border: 3px solid skyblue;
+    border-radius: 6px;
+    padding: 10px;
+    max-width: 200px;
+}
+
+.container .box img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container .box span{
+    font-weight: bold;
+    color: brown;
+}
+
+.error-msg{
+    color: red;
+    padding: 10px;
+    border: 3px solid red;
+}
