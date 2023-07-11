@@ -18,8 +18,17 @@ $menu = require 'menu.php';
 	<div class="logo">LOGO</div>
 	<h1><?=$title ?? 'Сайт с новостями'?></h1>
 	<nav>
+        <?php
+            //echo $_SERVER['REQUEST_URI'].'<br>';
+        ?>
+
+        <!-- если URI равен ссылке в ключе массива -->
 		<?php foreach ($menu as $key => $value):?>
-			<a href="<?=$key?>"><?=$value?></a>
+            <?php if($_SERVER['REQUEST_URI'] ===  $key):?>
+                <span class="active-link"><?=$value?></span>
+            <?php else:?>
+                <a href="<?=$key?>"><?=$value?></a>
+            <?php endif;?>
 		<?php endforeach;?>
 	</nav>
 </header>

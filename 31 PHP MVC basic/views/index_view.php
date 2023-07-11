@@ -12,7 +12,7 @@ require 'components/header.php';?>
             </a>
             <div class="news_preview">
                 <a href="news_detail.php?news_id=<?=$news_item['news_id']?>">
-                    <img src="../<?=$news_item['news_image']?>" alt="<?=$news_item['title']?>">
+                    <img src="<?=$news_item['news_image']?>" alt="<?=$news_item['title']?>">
                 </a>
                 <p><?=$news_item['short_text']?>...</p>
             </div>
