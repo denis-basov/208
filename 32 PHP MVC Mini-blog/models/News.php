@@ -37,6 +37,26 @@ class News
 		return $result->fetchAll();
 	}
 
+	/**
+	 * Метод для получения списка новостей по ID категории
+	 */
+	public static function getNewsListByCategoryId($id){
+		$pdo = DBConnect::getConnection();
+
+		$query = "SELECT news.id AS news_id, news.title, text, add_date, image,
+									 authors.id AS author_id, first_name, last_name, avatar,
+										 translation, class_name
+							FROM news, authors, category
+							WHERE author_id = authors.id
+								AND category_id = category.id
+							AND category_id = ?;";
+
+		$result = $pdo->prepare($query);
+		$result->execute([$id]);
+
+		return $result->fetchAll();
+	}
+
 
 	/**
 	 * Метод получения данных об одной новости по ID
@@ -57,5 +77,61 @@ class News
 		return $result->fetch();
 	}
 
+	/**
+	 * Метод для получения случайных картинок новостей текущей категории
+	 *
+	 */
+	public static function getRandImagesByCategoryID($id, $limit){
+		$pdo = DBConnect::getConnection();
+
+		$query = "SELECT title, image
+							FROM news
+							WHERE category_id = :category_id
+							ORDER BY RAND()
+							LIMIT :limit;";
+		$result = $pdo->prepare($query);
+		$result->bindValue(':category_id', $id, PDO::PARAM_INT);
+		$result->bindValue(':limit', $limit, PDO::PARAM_INT);
+		$result->execute();
+
+		return $result->fetchAll();
+	}
+
+	/**
+	 * Метод для получения ограниченного списка новостей по ID категории
+	 * для вывода в сайдбаре
+	 */
+	public static function getLimitNewsListByCategoryId($id, $limit){
+		$pdo = DBConnect::getConnection();
+
+		$query = "SELECT id, title, add_date, image
+							FROM news
+							WHERE category_id = :category_id
+							ORDER BY add_date DESC
+							LIMIT :limit";
+
+		$result = $pdo->prepare($query);
+		$result->bindValue(':category_id', $id, PDO::PARAM_INT);
+		$result->bindValue(':limit', $limit, PDO::PARAM_INT);
+		$result->execute();
+
+		return $result->fetchAll();
+	}
+
+	/**
+	 * Метод для получения количества новостей по каждой категории
+	SELECT home_type, AVG(price) as avg_price FROM Rooms
+	GROUP BY home_type
+	 */
+	public static function getNewsCountByCategories(){
+		$pdo = DBConnect::getConnection();
+
+		$query = "SELECT category_id, translation, COUNT(category_id) as count 
+							FROM news, category
+							WHERE category_id = category.id
+							GROUP BY category_id;";
+
+		return $pdo->query($query)->fetchAll();
+	}
 
 }
