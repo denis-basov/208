@@ -57,6 +57,8 @@
 							<li><a href="category.html">Travel</a></li>
 							<li><a href="category.html">Sports</a></li>
 							<li><a href="category.html">About</a></li>
+                            <!-- если клиент не авторизован, показываем ссылки для авторизации -->
+                            <!-- если клиент авторизован, показываем приветствие -->
 							<li class="d-none d-lg-inline-block"><a href="#" class="js-search-toggle"><span class="icon-search"></span></a></li>
 						</ul>
 					</nav>

@@ -50,7 +50,9 @@
                 </div>
 
                 <div class="pt-5">
-                    <p>Категория: <a href="#"><?=$news_item['translation']?></a></p>
+                    <p>Категория:
+                        <a href="news_category.php?category_id=<?=$news_item['category_id']?>"><?=$news_item['translation']?></a>
+                    </p>
                 </div>
 
                 <!-- комментарии к новости -->
@@ -157,8 +159,10 @@
                     <ul class="categories">
                         <?php foreach ($news_count_by_categories as $category_info):?>
                             <li>
-                                <a href="<?=$category_info['category_id']?>"><?=$category_info['translation']?>
-                                    <span>(<?=$category_info['count']?>)</span></a>
+                                <a href="news_category.php?category_id=<?=$category_info['category_id']?>">
+                                  <?=$category_info['translation']?>
+                                    <span>(<?=$category_info['count']?>)</span>
+                                </a>
                             </li>
                         <?php endforeach;?>
                     </ul>

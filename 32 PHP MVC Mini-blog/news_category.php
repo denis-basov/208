@@ -2,22 +2,18 @@
 // контроллер страницы просмотра новостей по категории
 
 require 'models/News.php';
-$id = 1;
+$id = (int)$_GET['category_id'];// получаем ID категории
+
 
 $news_list = News::getNewsListByCategoryId($id);
-DBConnect::d($news_list);
-?>
+//DBConnect::d($news_list);
+
+$title = 'Категория ' . $news_list[0]['translation'];
+$news_list_title = 'Новости категории ' . $news_list[0]['translation'];
+
+require 'views/news-category_view.php';
 
 
 
-<div class="py-5 bg-light">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<span>Category</span>
-				<h3>Sports</h3>
-				<p>Category description here.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam error eius quo, officiis non maxime quos reiciendis perferendis doloremque maiores!</p>
-			</div>
-		</div>
-	</div>
-</div>
+
+

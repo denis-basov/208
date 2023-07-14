@@ -45,11 +45,12 @@ class News
 
 		$query = "SELECT news.id AS news_id, news.title, text, add_date, image,
 									 authors.id AS author_id, first_name, last_name, avatar,
-										 translation, class_name
+										 translation, description, class_name
 							FROM news, authors, category
 							WHERE author_id = authors.id
 								AND category_id = category.id
-							AND category_id = ?;";
+							AND category_id = ?
+							ORDER BY add_date DESC;";
 
 		$result = $pdo->prepare($query);
 		$result->execute([$id]);

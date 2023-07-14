@@ -14,10 +14,9 @@
 					<li><a href="#">Subscribes</a></li>
 				</ul>
 				<ul class="list-unstyled float-left">
-					<li><a href="#">Travel</a></li>
-					<li><a href="#">Lifestyle</a></li>
-					<li><a href="#">Sports</a></li>
-					<li><a href="#">Nature</a></li>
+					<li><a href="news_category.php?category_id=1">Спорт</a></li>
+					<li><a href="news_category.php?category_id=2">Наука</a></li>
+					<li><a href="news_category.php?category_id=4">Культура</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
