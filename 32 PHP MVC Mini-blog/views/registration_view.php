@@ -41,7 +41,7 @@
 					<div class="row form-group">
 						<div class="col-md-12">
 							<label class="text-black">Адрес электронной почты</label>
-							<input type="email" name="email" class="form-control">
+							<input type="text" name="email" class="form-control">
 							<span class="input-error"></span>
 						</div>
 					</div>

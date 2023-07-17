@@ -8,6 +8,8 @@
 			<div class="col-md-3 ml-auto">
 				<!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
 				<ul class="list-unstyled float-left mr-5">
+                    <li><a href="enter.php">Вход</a></li>
+                    <li><a href="registration.php">Регистрация</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Advertise</a></li>
 					<li><a href="#">Careers</a></li>
