@@ -28,9 +28,22 @@ $news_count_by_categories = News::getNewsCountByCategories();
 //DBConnect::d($news_count_by_categories);
 
 
-
 // разделяем строку на массив
 $news_item['text'] = explode("\r\n\r\n", $news_item['text']);
 
+
+// если отправлена форма для добавления комментария
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+	DBConnect::d($_POST);
+	$comment = htmlspecialchars(trim($_POST['message']));
+
+	if(empty($comment)){// если коммент пустой
+		// выводим ошибку
+		$commentError = 'Введите комментарий';
+	}else{
+		// добавляем коммент в таблицу
+	}
+
+}
 
 require 'views/news-detail_view.php';

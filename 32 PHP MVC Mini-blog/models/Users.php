@@ -51,5 +51,36 @@ class Users
 		return $pdo->lastInsertId();// получаем id добавленного юзера
 	}
 
+	/**
+	 * получение пароля по логину пользователя
+	 */
+	public static function getPasswordByLogin($login){
+		$pdo = DBConnect::getConnection();
+
+		$query = "SELECT password 
+							FROM users 
+							WHERE login = ?";
+
+		$result = $pdo->prepare($query);
+		$result->execute([$login]);
+
+		return $result->fetch()['password'];// возвращаем СТРОКУ с паролем
+	}
+
+	/**
+	 * получение id, first_name по логину для записи в сессию при входе на сайт
+	 */
+	public static function getUserInfoSession($login){
+		$pdo = DBConnect::getConnection();
+
+		$query = "SELECT id, first_name
+							FROM users
+							WHERE login = ?";
+
+		$result = $pdo->prepare($query);
+		$result->execute([$login]);
+
+		return $result->fetch();
+	}
 
 }

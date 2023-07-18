@@ -13,8 +13,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){// если форма отправл�
 
 	// проверяем данные
 	list($errors, $input) = SignUp::validateForm();
-	DBConnect::d($errors);
-	DBConnect::d($input);
+	//DBConnect::d($errors);
+	//DBConnect::d($input);
 
 	// если есть ошибки при заполнении
 	if($errors){// показываем форму снова

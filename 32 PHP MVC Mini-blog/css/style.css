@@ -1735,3 +1735,7 @@ h1, h2, h3, h4, h5,
 .img-fluid{
   width: 100%;
 }
+
+.input-error{
+  color: red;
+}

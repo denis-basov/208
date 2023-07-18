@@ -74,23 +74,26 @@
                     </ul>
                     <!-- END comment-list -->
 
-                    <!-- форма для добавления комментария  -->
-                    <div class="comment-form-wrap pt-5">
-                        <h3 class="mb-5">Оставить комментарий</h3>
-                        <form action="#" method="POST" class="p-5 bg-light">
+                    <!-- если пользователь авторизован, показываем форму для комментирования   -->
+					<?php if( isset($_SESSION['valid_user']) ):?>
+                        <div class="comment-form-wrap pt-5">
+                            <h3 class="mb-5">Оставить комментарий</h3>
+                            <form method="POST" class="p-5 bg-light">
 
-                            <div class="form-group">
-                                <label for="message">Комментарий</label>
-                                <textarea name="message" id="message" cols="30" rows="10"
-                                          class="form-control"></textarea>
-                            </div>
+                                <div class="form-group">
+                                    <label for="message">Комментарий</label>
+                                    <textarea name="message" id="message" cols="30" rows="10"
+                                              class="form-control"></textarea>
+                                </div>
+                                <span class="input-error"><?=$commentError ?? ''?></span>
 
-                            <div class="form-group">
-                                <input type="submit" value="Отправить комментарий" class="btn btn-primary" />
-                            </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Отправить комментарий" class="btn btn-primary" />
+                                </div>
 
-                        </form>
-                    </div>
+                            </form>
+                        </div>
+                    <?php endif;?>
 
                 </div>
                 <!-- /комментарии к новости -->

@@ -1,3 +1,7 @@
+<?php
+session_start();
+//DBConnect::d($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,10 +59,16 @@
 							<li><a href="category.html">Tech</a></li>
 							<li><a href="category.html">Entertainment</a></li>
 							<li><a href="category.html">Travel</a></li>
-							<li><a href="enter.php">Вход</a></li>
-							<li><a href="registration.php">Регистрация</a></li>
-                            <!-- если клиент не авторизован, показываем ссылки для авторизации -->
+
                             <!-- если клиент авторизован, показываем приветствие -->
+                            <?php if( isset($_SESSION['valid_user']) ):?>
+                                <li><a href="cabinet.php">Привет, <?=$_SESSION['first_name']?></a></li>
+                                <li><a href="core/exit.php">Выход</a></li>
+                            <!-- если клиент не авторизован, показываем ссылки для авторизации -->
+                            <?php else:?>
+                                <li><a href="enter.php">Вход</a></li>
+                                <li><a href="registration.php">Регистрация</a></li>
+                            <?php endif;?>
 							<li class="d-none d-lg-inline-block"><a href="#" class="js-search-toggle"><span class="icon-search"></span></a></li>
 						</ul>
 					</nav>

@@ -105,7 +105,7 @@ class SignUp
 
 
 	/**
-	 * МЕТОД ДЛЯ ПРОВЕРКИ ВСЕХ ДАННЫХ ФОРМЫ
+	 * МЕТОД ДЛЯ ПРОВЕРКИ ВСЕХ ДАННЫХ ФОРМЫ РЕГИСТРАЦИИ
 	 */
 	public static function validateForm(){
 		//DBConnect::d($_POST);
@@ -202,10 +202,10 @@ class SignUp
 		session_start();
 		$_SESSION['user_id'] = $input['user_id'];
 		$_SESSION['valid_user'] = $input['login'];
+		$_SESSION['first_name'] = $input['first_name'];
 
 		// перенаправляем на главную
 		header('Location: /');
 		die();
-
 	}
 }
