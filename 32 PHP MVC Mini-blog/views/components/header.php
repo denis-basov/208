@@ -56,7 +56,7 @@ session_start();
 						<ul class="site-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
 							<li><a href="/">Домой</a></li>
 							<li><a href="news.php">Новости</a></li>
-							<li><a href="category.html">Tech</a></li>
+							<li><a href="news_js.php">Новости с подгрузкой</a></li>
 							<li><a href="category.html">Entertainment</a></li>
 							<li><a href="category.html">Travel</a></li>
 

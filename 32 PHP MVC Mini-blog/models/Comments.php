@@ -40,4 +40,12 @@ class Comments
 	/**
 	 * метод для добавления нового комментария к новости от пользователя
 	 */
+	public static function addNewCommentToNewsItem($comment, $newsId, $userId){
+		$pdo = DBConnect::getConnection();
+
+		$query = "INSERT INTO comments (comment, news_id, user_id)
+													VALUES (?,?,?)";
+		$result = $pdo->prepare($query);
+		$result->execute([$comment, $newsId, $userId]);
+	}
 }

@@ -62,7 +62,7 @@
                         <?php foreach($comments as $comment):?>
                             <li class="comment">
                                 <div class="vcard">
-                                    <img src="<?=$comment['image']?>" alt="<?=$comment['first_name'].' '.$comment['last_name']?>" />
+                                    <img class="rounded-circle border border-primary" src="<?=$comment['image']?>" alt="<?=$comment['first_name'].' '.$comment['last_name']?>" />
                                 </div>
                                 <div class="comment-body">
                                     <h3><?=$comment['first_name'].' '.$comment['last_name']?></h3>

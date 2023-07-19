@@ -32,18 +32,27 @@ $news_count_by_categories = News::getNewsCountByCategories();
 $news_item['text'] = explode("\r\n\r\n", $news_item['text']);
 
 
+
 // если отправлена форма для добавления комментария
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-	DBConnect::d($_POST);
-	$comment = htmlspecialchars(trim($_POST['message']));
+	//DBConnect::d($_POST);
+	session_start();
 
-	if(empty($comment)){// если коммент пустой
+	if(empty($_POST['message'])){// если коммент пустой
 		// выводим ошибку
 		$commentError = 'Введите комментарий';
 	}else{
+		// обезвреживаем данные
+		$comment = htmlspecialchars(trim($_POST['message']));
+
 		// добавляем коммент в таблицу
+		Comments::addNewCommentToNewsItem($comment, $id, $_SESSION['user_id']);
+
+//		header("Location: /news_detail.php?news_id=$id");
+		header('Refresh: 0');
 	}
 
 }
 
 require 'views/news-detail_view.php';
+
