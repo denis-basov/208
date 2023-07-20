@@ -10,8 +10,9 @@
 			<?php foreach ($news_list as $news_item):?>
 				<div class="col-lg-4 mb-4">
 					<div class="entry2">
-						<a href="news_detail.php?news_id=<?=$news_item['news_id']?>"><img src="<?=$news_item['image']?>"
-                                                           alt="<?=$news_item['title']?>" class="img-fluid rounded"></a>
+						<a href="news_detail.php?news_id=<?=$news_item['news_id']?>">
+                            <img src="<?=$news_item['image']?>" alt="<?=$news_item['title']?>" class="img-fluid rounded">
+                        </a>
 						<div class="excerpt">
 							<span class="post-category text-white <?=$news_item['class_name']?> mb-3"><?=$news_item['translation']?></span>
 
